@@ -6,7 +6,7 @@ import cors from 'cors';
 import fs from 'fs';
 
 const app = express();
-const port = process.env.PORT || 3000;
+//const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -47,6 +47,6 @@ app.get('/api/revai/:id', async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Proxy server running at http://localhost:${port}`);
-});
+//app.listen(port, () => {
+  //console.log(`Proxy server running at http://localhost:${port}`);
+//});
