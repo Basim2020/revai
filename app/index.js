@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const upload = multer({ dest: 'uploads/' });
-const revaiClient = new RevAiApiClient('02ksvcDNpVd25ggNlC2h7h_fVj6oYr5ecNEhRUlYPBk66SBJZkCnMo0X4v7OYGtUs2ht3eKJm7Jvy14P0wlxfllYg3YNQ');
+const revaiClient = new RevAiApiClient('029CQ1y5-plTHooNYXBYy5q7Gw0-pLK4EOTsA-KIqxFZLJWO1vXTwioWC69GpVdtwhv94lq9Dxh8t_jUgTo8bQDg-0jds');
 
 app.post('/api/revai', upload.single('file'), async (req, res) => {
   const filePath = req.file.path;
